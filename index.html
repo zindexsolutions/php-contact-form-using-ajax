@@ -1,0 +1,64 @@
+
+<html>
+<head>
+    <title>AJAX Contact Form Using PHP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+    <body>  
+        <div class="container">
+            <!-- Contact-Section Start -->
+            <div class="contact-section clearfix">
+                <div class="c-form contact-form all_form">
+                    <h3>Contact Form</h3>
+                    <form id="contact-form" action="php/mail.php" method="post">
+                        <div class="form-row clearfix">
+                            <div class="form-col clearfix">
+                                <input class="input-text" type="text" placeholder="Name *" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="form-col clearfix">
+                                <input class="input-text" type="email" placeholder="Email *" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="form-col clearfix">
+                                <div class="l-col clearfix">
+                                    <input class="input-text" type="text" placeholder="Location" id="location" name="location">
+                                </div>
+                            </div>
+                            <div class="form-col clearfix">
+                                <div class="r-col clearfix">
+                                    <input class="input-text" type="tel" placeholder="Phone *" id="number" name="number">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="form-col clearfix">
+                                <textarea class="input-text" placeholder="Requirement Details*" id="comment" name="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="form-col clearfix">
+                                <button type="submit" class="btn btn-default button button--isi sendmail">Send</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="successSend" class="alert alert-success hide clearfix">
+                        <strong>Success!</strong> Your message has been sent.
+                    </div>
+                    <div id="errorSend" class="alert alert-danger hide clearfix">
+                        <strong>Error!</strong> There was a problem. Please try again later.
+                    </div>
+                </div>
+            </div>
+            <!-- Contact-Section End -->
+         </div>
+        <!-- Load JS siles -->
+        <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+        <!-- general script file -->
+
+        <script type="text/javascript" src="assets/js/sendmail.js"></script>
+    </body>
+</html>
